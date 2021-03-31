@@ -13,7 +13,9 @@ const TestItem = ({test, index, lastIndex}) => {
     return <div className={'test_card'}>
         <div className={'test_card__question'}>{index+1} {question}</div>
         <div className={'test_card__wrapper'}>
-            {image && <img className={'img'} src={image} alt={'test alt text'}/>}
+            {image && <div className={'test_card__img'}>
+                <img  src={image} alt={'test alt text'}/>
+            </div>}
             <div className={'test_card__answers'}>
                 {type === TEST && options && options.length?
                     options.map((value, elIndex) => <Checkbox key={index + value} value={elIndex} label={value} name={index} multiselect={multiselect}/>) :
@@ -21,8 +23,6 @@ const TestItem = ({test, index, lastIndex}) => {
                 }
             </div>
         </div>
-
-
         {time && <Timer key={index} time={time} test={index}/>}
         <div className={'test_card__btn_container'}>
             {index? <Button payload={prevTest}>Prev</Button>: null}

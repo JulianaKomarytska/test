@@ -1,16 +1,17 @@
 .test_card
   width: 100%
-  height: 70vh
+  min-height: 70vh
   display: flex
   flex-direction: column
+  overflow-x: hidden
   &__question
     text-transform: uppercase
     width: 100%
     text-align: center
-    margin: 2em auto
+    margin: 1.5em auto
   &__btn_container
     width: 90%
-    margin: 0 auto 3em
+    margin: 0 auto 2em
     flex-grow: 1
     align-items: flex-end
     display: flex
@@ -24,8 +25,17 @@
     justify-content: center
   &__wrapper
     display: flex
+    flex-wrap: wrap
     min-width: 300px
     width: 60%
-    margin: 2em auto
+    margin: 1.5em auto
+  &__img
+    max-width: 80%
+    margin: 0 auto
+    object-fit: contain
+    img
+      width: 100%
+
+
 
 
