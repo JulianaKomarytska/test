@@ -1,0 +1,28 @@
+@import "../../CONSTS/consts.sass"
+
+.checkbox
+  display: flex
+  align-items: center
+  background-color: rgba($base-color,0.1)
+  box-shadow: 0 0 20px rgba($base-color,0.2)
+  width: 80%
+  margin: 1em auto
+  transition: all 0.2s ease-in
+  &:hover
+    width: 82%
+  &_input
+    display: none
+    &:checked + label:after
+      position: absolute
+      display: inline-block
+      top: 1em
+      left: 0
+      margin: 0 0.5em
+      content: '✓'
+      width: 1em
+      height: 1em
+
+  &_label
+    position: relative
+    width: 100%
+    padding: 1em 2em

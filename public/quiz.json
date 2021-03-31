@@ -1,0 +1,55 @@
+[
+  {
+    "question": "let's get acquainted?",
+    "type": "question"
+  },
+  {
+    "question": "What is your name?",
+    "type": "question",
+    "time" : "20"
+  },
+  {
+    "question": "What's your mood now?",
+    "type": "question",
+    "time" : "500"
+  },
+  {
+    "question": "Do you like fast food?",
+    "type": "test",
+    "options": [
+      "Sure!",
+      "No",
+      "I love but try not to eat it"
+    ]
+  },
+  {
+    "question": "How would you describe yourself? \n(you can choose several answers)",
+    "type": "test",
+    "options": [
+      "Smart",
+      "Beautiful",
+      "Funny"
+    ],
+    "multiselect": true
+  },
+  {
+    "question": "Do you like cats?",
+    "type": "test",
+    "time" : "5",
+    "options": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "question": "Do you see cat?",
+    "image": "./cat.jpeg",
+    "type": "test",
+    "time" : "10",
+    "options": [
+      "Yes",
+      "No",
+      "What cat?"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+@import "../../CONSTS/consts.sass"
+
+.startScreen
+  width: 100%
+  height: calc(100vh - #{$nav-height})
+  display: flex
+  justify-content: center
+  align-items: center
+  color: $text-color
+  button
+    border: none
+    height: 5em
+    width: 10em
+    background-color: rgba($base-color,0.1)
+    box-shadow: 0 0 20px rgba($base-color,0.2)
+    transition: all 0.1s ease-in
+    outline: none
+    &:hover
+      height: 10em
+      width: 20em
+  &.activeTest
+    height: 100%
+    justify-content: flex-end
+    button
+      height: 3em
+      margin: 2em 2em 2em 0
+      &:hover
+        height: 3em
+        width: 15em

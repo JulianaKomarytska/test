@@ -1,0 +1,7 @@
+export const GET_TEST = 'GET_TEST'
+export const RUN_TEST = 'RUN_TEST'
+export const SWITCH_QUESTION = 'SWITCH_QUESTION'
+export const SAVE_ANSWER = 'SAVE_ANSWER'
+export const REMOVE_ANSWER = 'REMOVE_ANSWER'
+export const DISABLE_EDIT_ANSWER = 'DENY_EDIT_ANSWER'
+export const SET_TEST_TIME = 'SET_TEST_TIME'
